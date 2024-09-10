@@ -23,7 +23,7 @@ public class Account {
                 id = sc.next();
             }
             
-            while(duplicateID(id)){
+            while(duplicateID(id,anum)){
                 id = sc.next();
             }
             
@@ -59,8 +59,8 @@ public class Account {
         return false;
     }
     
-    public boolean duplicateID(String getID){
-        for(int i = 0; i < anum; i++){
+    public boolean duplicateID(String getID, int max){
+        for(int i = 0; i < max; i++){
             if(getID.equals(acs[i].id)){
                 System.out.print("Input invalid: Must not have a duplicated ID, try again: ");
                 return true;
