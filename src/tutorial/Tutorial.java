@@ -5,8 +5,10 @@ public class Tutorial {
         Sale sl = new Sale();
         Product pr = new Product();
         Grade gr = new Grade();
+        Account ac = new Account();
         
-        gr.getGrades();
+        ac.addAccount();
+//        gr.getGrades();
 //        sl.getSales();
 //        pr.getProduct();
     }
